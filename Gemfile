@@ -7,6 +7,11 @@ gem 'rails', '3.1.1'
 
 gem 'sqlite3'
 
+gem 'haml-rails'
+
+gem 'execjs'
+
+gem 'therubyracer'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -33,4 +38,10 @@ gem 'jquery-rails'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+end
+
+group :development, :test do
+  gem 'webrat'
+  gem 'rspec'
+  gem 'rspec-rails'
 end
